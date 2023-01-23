@@ -13,9 +13,13 @@ class MathProgram
         double Y = 3.3;
         // defines float Z as 4 times X^2 added to 3 times Y
         double Z = 4*X*X + 3*Y;
+        // Creating a string for X and Y values by concatenation
         string outputXY = "X = " + X + ", Y = " + Y;
+        // Creating a string for Z value by concatenation
         string outputZ = "The value of Z is " + Z + ",";
+        // Displaying line 1 to console
         Console.WriteLine(outputXY);
+        // Displaying line 2 to console
         Console.WriteLine(outputZ);
     }
 }
