@@ -15,12 +15,10 @@ class MathProgram
         double Z = 4*X*X + 3*Y;
         // Creating a string for X and Y values by concatenation
         string outputXY = "X = " + X + ", Y = " + Y;
-        // Creating a string for Z value by concatenation
-        string outputZ = "The value of Z is " + Z + ",";
-        // Displaying line 1 to console
-        Console.WriteLine(outputXY);
-        // Displaying line 2 to console
-        Console.WriteLine(outputZ);
+        // Creating a string for Z value by interpolation
+        string outputZ = ($"The value of Z is {Z}.");
+        // Displaying line 1 and line 2 to console
+        Console.WriteLine($"{outputXY}\n{outputZ}");
     }
 }
 }
